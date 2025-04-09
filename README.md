@@ -1,4 +1,4 @@
-# Fundamentals of electrical machines and drives course
+# Fundamentals of electrical machines and power electronics
 
 [![Build Status](https://github.com/IAS-Uni-Siegen/EMD_Course/actions/workflows/BuildPDFs.yml/badge.svg)](https://github.com/IAS-Uni-Siegen/EMD_Course/actions/workflows/BuildPDFs.yml)
 [![CC BY 4.0][cc-by-shield]][cc-by]
@@ -56,7 +56,7 @@ See "Cite this repository" info box on the top-right or use the following BibTeX
 ```
 @misc{Sah_EMPE_2025,
     author = {Sah, Bikash},
-    title = {{Electrical Machines and Power Electronics}},
+    title = {{Fundamentals of Electrical Machines and Power Electronics}},
     url = {https://github.com/IAS-Uni-Siegen/EMPE_course},
     year = {2025}
 }
