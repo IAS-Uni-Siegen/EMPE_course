@@ -181,6 +181,239 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Elementary introduction of transformer %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Introduction to transformer- Ideal transformer}
+    \begin{columns}
+     \begin{column}{0.6\textwidth}
+      \begin{itemize}
+        \item Characteristics of an ideal transformer:
+        \item \textbf{No resistance or reactance}: The transformer has no internal resistance or reactance, meaning that the primary and secondary windings have zero impedance.
+		\item \textbf{Lossless}: No energy losses in the transformer (no copper or iron losses).
+        \item \textbf{Perfect coupling}: All the magnetic flux produced by the primary winding links with the secondary winding (no leakage flux).
+        \item \textbf{Linear}: The relationship between primary and secondary voltages and currents is linear (no saturation or non-linearity).
+        \item \textbf{No phase shift}: The primary and secondary voltages are in phase (no phase difference).
+      \end{itemize}
+      \end{column}
+      \begin{column}{0.4\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.8\textwidth]{fig/lec03/Trans_current.pdf}
+				\caption{A sinusoidal waveform or current or voltage in an ideal transformer}
+			\end{figure}
+	\end{column}
+    \end{columns}  
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Voltage transformer %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Voltage transformation in an ideal transformer}
+	\textbf{Using Faraday's Law:}
+	\begin{equation}
+	e = -N \frac{d\psi}{dt}
+	\end{equation}
+	
+	For the primary and secondary windings:
+	\begin{equation}
+	e_1 = -N_1 \frac{d\psi}{dt}, \quad e_2 = -N_2 \frac{d\psi}{dt}
+	\end{equation}
+	
+	Dividing the two equations:
+	\begin{equation}
+	\frac{e_1}{e_2} = \frac{N_1}{N_2}
+	\end{equation}
+	
+	Assuming sinusoidal steady-state and ideal conditions (no losses):
+	\begin{equation}
+	\frac{U_1}{U_2} = \frac{N_1}{N_2}
+	\end{equation}
+	
+	Where:
+	\begin{itemize}
+		\item \( U_1, U_2 \): RMS voltages
+		\item \( N_1, N_2 \): Turns in primary and secondary windings
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Current transformation %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Current transformation}
+	\textbf{For an ideal transformer:}
+	\begin{equation}
+	\text{Input VA} = \text{Output VA}
+	\end{equation}
+	
+	\begin{equation}
+	U_1 I_1 = U_2 I_2
+	\end{equation}
+	
+	From voltage transformation:
+	\begin{equation}
+	\frac{U_1}{U_2} = \frac{N_1}{N_2}
+	\end{equation}
+	
+	Substitute into power equation:
+	\begin{equation}
+	\frac{I_1}{I_2} = \frac{N_2}{N_1}
+	\end{equation}
+	
+	Where:
+	\begin{itemize}
+		\item \( I_1, I_2 \): Currents in primary and secondary
+		\item Power is conserved under ideal conditions
+	\end{itemize}
+\end{frame}
+% Slide 1 - Introduction
+\begin{frame}{Overview}
+	Modelling of electrical machines helps in analysis, design, control, and simulation. Various modelling approaches are used depending on the application, complexity, and level of detail required.
+	\begin{itemize}
+		\item Steady-State Modelling
+		\item Dynamic (Time-Domain) Modelling
+		\item Electromagnetic (Field-Based) Modelling
+		\item Equivalent Circuit Modelling
+		\item Thermal Modelling
+		\item Mechanical Modelling
+		\item Data-Driven / Empirical Modelling
+		\item Hybrid Modelling
+	\end{itemize}
+	\end{frame}
+	
+	% Slide 2 - Steady State
+	\begin{frame}{Steady-State and Dynamic (time domain) Modelling}
+		\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\textbf{Steady state Modeling}
+			\begin{itemize}
+				\item Assumes constant or periodic operating conditions.
+				\item Useful for power flow, losses, voltage/current analysis under sinusoidal operation.
+				\item Commonly used in:
+				\begin{itemize}
+					\item Load flow studies
+					\item Motor rating selection
+					\item Efficiency estimation
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\textbf{Dynamic Modeling}
+			\begin{itemize}
+				\item Captures transient and time-varying behavior.
+				\item Based on differential equations and flux linkage dynamics.
+				\item Common forms:
+				\begin{itemize}
+					\item dq-axis model (Park’s transformation)
+					\item State-space model
+				\end{itemize}
+				\item Used in control design, simulation of startup/faults, and power electronics.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+	
+
+\begin{frame}{Electromagnetic and Equivalent Circuit Modeling}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Electromagnetic (Field-Based) Modeling}
+            \begin{itemize}
+                \item Solves Maxwell’s equations using methods like FEM.
+                \item Captures spatial variation of fields, core saturation, and parasitic effects.
+                \item Used for:
+                \begin{itemize}
+                    \item Torque ripple/cogging analysis
+                    \item Magnetic material optimization
+                    \item Detailed design validation
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Equivalent Circuit Modeling}
+            \begin{itemize}
+                \item Simplified lumped-parameter model.
+                \item Represents machines with resistances, inductances, and voltage sources.
+                \item Used for:
+                \begin{itemize}
+                    \item Quick hand calculations
+                    \item Educational and conceptual understanding
+                    \item Basic control development
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Thermal and Mechanical Modeling}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Thermal Modeling}
+            \begin{itemize}
+                \item Predicts temperature rise and heat dissipation.
+                \item Models via lumped networks or FEM-based thermal simulations.
+                \item Key for:
+                \begin{itemize}
+                    \item Overtemperature protection
+                    \item Cooling system design
+                    \item Electro-thermal coupling
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Mechanical Modeling}
+            \begin{itemize}
+                \item Models inertia, friction, damping, and mechanical loads.
+                \item Integrated with electrical models in simulations.
+                \item Applications include:
+                \begin{itemize}
+                    \item Speed/torque dynamics
+                    \item Shaft vibration and failure analysis
+                    \item Control loop tuning
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Data-Driven and Hybrid Modeling}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Data-Driven / Empirical Modeling}
+            \begin{itemize}
+                \item Based on experimental data or system identification.
+                \item No need for full physical understanding.
+                \item Methods include:
+                \begin{itemize}
+                    \item Neural networks, lookup tables
+                    \item Regression models, ML algorithms
+                \end{itemize}
+                \item Useful when parameters are hard to measure or unknown.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Hybrid Modeling}
+            \begin{itemize}
+                \item Combines multiple domains (electrical, thermal, mechanical).
+                \item Balances accuracy and computational effort.
+                \item Typical in:
+                \begin{itemize}
+                    \item Digital twin implementations
+                    \item Real-time HIL simulators
+                    \item Multi-physics co-simulation
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Electromagnetic modeling of the single-phase transformer %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
