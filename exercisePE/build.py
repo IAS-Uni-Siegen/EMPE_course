@@ -63,13 +63,13 @@ os.makedirs('built', exist_ok=True)
 
 
 # build main pdf (without solutions)
-os.chdir('exercise')
+os.chdir('exercisePE')
 
 build_pdf(with_solution=True)
 #os.makedirs('../built', exist_ok=True)
-os.replace('main.pdf', os.path.join('../built', 'exercise_with_solution.pdf'))
+os.replace('main.pdf', os.path.join('../built', 'exercisePE_with_solution.pdf'))
     
     # Build without solutions
 build_pdf(with_solution=False)
-os.replace('main.pdf', os.path.join('../built', 'exercise.pdf'))
+os.replace('main.pdf', os.path.join('../built', 'exercisePE.pdf'))
 
