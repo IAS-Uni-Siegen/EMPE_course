@@ -40,6 +40,9 @@ The covered topics are:
 ## Exercise tasks with the topic EMD (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
 
+## Exercise tasks with the topic PE (click on preview picture)
+<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
+
 <!--
 ## Exercise tasks (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMD_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
