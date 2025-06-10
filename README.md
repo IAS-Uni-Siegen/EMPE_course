@@ -41,7 +41,7 @@ The covered topics are:
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
 
 ## Exercise tasks with the topic PE (click on preview picture)
-<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview_PE.png" alt=""></a>
+<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/ExercisePE_preview.png" alt=""></a>
 
 <!--
 ## Exercise tasks (click on preview picture)
