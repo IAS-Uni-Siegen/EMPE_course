@@ -37,7 +37,7 @@ The covered topics are:
     - Analytical analysis of selected toplogies
     - Introduction to electrical drives and components
     
-## Exercise tasks (click on preview picture)
+## Exercise tasks with the topic EMD (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
 
 <!--
