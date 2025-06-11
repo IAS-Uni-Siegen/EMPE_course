@@ -44,6 +44,10 @@ The covered topics are:
 ## Exercise tasks with the topic PE (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/ExercisePE_preview.png" alt=""></a>
 
+<p align="center">
+  <img src="./Figures/readme/efficiency_drive.svg" />
+</p>
+
 <!--
 ## Exercise tasks (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMD_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
