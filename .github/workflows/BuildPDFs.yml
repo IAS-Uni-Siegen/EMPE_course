@@ -25,6 +25,11 @@ jobs:
             python3 build.py
             cd ..
 
+            cd exercisePE
+            cp ../course_template/exerciseClass.cls ./
+            python3 build.py
+            cd ..
+
             cd lecture
             cp ../course_template/lectureClass.cls ./
             python3 build.py

@@ -36,9 +36,23 @@ The covered topics are:
     - Power converter toplogies
     - Analytical analysis of selected toplogies
     - Introduction to electrical drives and components
+
     
-## Exercise tasks (click on preview picture)
+## Exercise tasks with the topic EMD (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
+
+<h2 align="center">Exercise tasks with the topic PE</h2>
+<p align="center">
+  <a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf">
+    <img src="misc/ExercisePE_preview.png" alt="Exercise Preview">
+  </a>
+</p>
+<!--
+## Exercise tasks with the topic PE (click on preview picture)
+<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/ExercisePE_preview.png" alt=""></a>
+<p align="center">
+  <img src=".misc/ExercisePE_preview.png" />
+</p>
 
 <!--
 ## Exercise tasks (click on preview picture)
