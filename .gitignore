@@ -26,10 +26,10 @@
 lecture/*.pdf
 exercise/*.pdf
 exam/summer2024/*.pdf
-Calender_plan
-Books
+Calender_plan/
+Books/
 PE_course_copy
-exam\summer2025_BS
+exam/summer2025_BS/
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
