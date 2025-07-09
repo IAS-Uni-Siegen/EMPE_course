@@ -231,83 +231,83 @@
     \end{figure}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Alternative steady-state analysis: average values %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Alternative steady-state analysis: average values}
-    From the previous slide we know that the average inductor voltage is zero in steady state
-    \begin{equation}
-        \overline{u}_\mathrm{L} = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} u_\mathrm{L}(t) \mathrm{d}t = \overline{u}_\mathrm{L} = 0,
-    \end{equation}%
-    \pause%
-    since otherwise the average inductor current would change between periods, compare
-    $$
-    L \frac{\mathrm{d}i_\mathrm{L}(t)}{\mathrm{d}t} =  u_\mathrm{L}(t).
-    $$%
-    \pause%
-    \onslide<3->{From \figref{fig:step-down-converter-simple} we can apply Kirchhoff's voltage law to obtain}
-    \begin{equation}
-        \onslide<3->{u_\mathrm{s}(t) = u_\mathrm{L}(t) + u_2(t)} \onslide<4->{\quad \Rightarrow \quad \overline{u}_\mathrm{s} = \overline{u}_\mathrm{L} + U_2} \onslide<5->{\quad \Leftrightarrow \quad  \overline{u}_\mathrm{s} = U_2.}
-        \label{eq:Kirchhoff-switch-voltage}
-    \end{equation}
-    \onslide<6->{%
-    The average switch voltage is given by  }
-    \begin{equation}
-        \onslide<6->{\overline{u}_\mathrm{s} = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} u_\mathrm{s}(t) \mathrm{d}t} \onslide<7->{= \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{on}} U_1 \mathrm{d}t}\onslide<8->{ = U_1 \frac{T_\mathrm{on}}{T_\mathrm{s}} = U_1 D.}
-        \label{eq:average-switch-voltage}
-    \end{equation}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Alternative steady-state analysis: average values %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Alternative steady-state analysis: average values}
+%     From the previous slide we know that the average inductor voltage is zero in steady state
+%     \begin{equation}
+%         \overline{u}_\mathrm{L} = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} u_\mathrm{L}(t) \mathrm{d}t = \overline{u}_\mathrm{L} = 0,
+%     \end{equation}%
+%     \pause%
+%     since otherwise the average inductor current would change between periods, compare
+%     $$
+%     L \frac{\mathrm{d}i_\mathrm{L}(t)}{\mathrm{d}t} =  u_\mathrm{L}(t).
+%     $$%
+%     \pause%
+%     \onslide<3->{From \figref{fig:step-down-converter-simple} we can apply Kirchhoff's voltage law to obtain}
+%     \begin{equation}
+%         \onslide<3->{u_\mathrm{s}(t) = u_\mathrm{L}(t) + u_2(t)} \onslide<4->{\quad \Rightarrow \quad \overline{u}_\mathrm{s} = \overline{u}_\mathrm{L} + U_2} \onslide<5->{\quad \Leftrightarrow \quad  \overline{u}_\mathrm{s} = U_2.}
+%         \label{eq:Kirchhoff-switch-voltage}
+%     \end{equation}
+%     \onslide<6->{%
+%     The average switch voltage is given by  }
+%     \begin{equation}
+%         \onslide<6->{\overline{u}_\mathrm{s} = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} u_\mathrm{s}(t) \mathrm{d}t} \onslide<7->{= \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{on}} U_1 \mathrm{d}t}\onslide<8->{ = U_1 \frac{T_\mathrm{on}}{T_\mathrm{s}} = U_1 D.}
+%         \label{eq:average-switch-voltage}
+%     \end{equation}
   
-\end{frame}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Alternative steady-state analysis: average values (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Alternative steady-state analysis: average values (cont.)}
-    Combining \eqref{eq:Kirchhoff-switch-voltage} and \eqref{eq:average-switch-voltage} we obtain the \hl{voltage transfer ratio}
-    \begin{equation}
-        \frac{U_2}{U_1} =  D.
-    \end{equation}
-    \pause
-    \onslide<2->{In addition, we can calculate the average input current as}
-    \begin{equation}
-        \onslide<2->{\overline{i}_1 = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} i_1(t) \mathrm{d}t}\onslide<3->{ = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{on}} i_\mathrm{L}(t) \mathrm{d}t} \onslide<4->{= \frac{T_\mathrm{on}}{T_\mathrm{s}} \overline{i}_\mathrm{L} = D \overline{i}_\mathrm{L}.}
-    \end{equation}%
-    \onslide<5->{%
-    Since $i_2(t) = i_\mathrm{L}(t)$ applies, we can conclude
-    \begin{equation}
-        \frac{U_2}{U_1} = \frac{\overline{i}_1}{\overline{i}_2} = D.
-    \end{equation}}%
-    \onslide<6->{%
-    Hence, the duty cycle $D$ has a similar interpretation for the DC-DC step-down converter as the turn ratio for an ideal transformer in the AC domain.
-    }
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Alternative steady-state analysis: average values (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Alternative steady-state analysis: average values (cont.)}
+%     Combining \eqref{eq:Kirchhoff-switch-voltage} and \eqref{eq:average-switch-voltage} we obtain the \hl{voltage transfer ratio}
+%     \begin{equation}
+%         \frac{U_2}{U_1} =  D.
+%     \end{equation}
+%     \pause
+%     \onslide<2->{In addition, we can calculate the average input current as}
+%     \begin{equation}
+%         \onslide<2->{\overline{i}_1 = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{s}} i_1(t) \mathrm{d}t}\onslide<3->{ = \frac{1}{T_\mathrm{s}} \int_{0}^{T_\mathrm{on}} i_\mathrm{L}(t) \mathrm{d}t} \onslide<4->{= \frac{T_\mathrm{on}}{T_\mathrm{s}} \overline{i}_\mathrm{L} = D \overline{i}_\mathrm{L}.}
+%     \end{equation}%
+%     \onslide<5->{%
+%     Since $i_2(t) = i_\mathrm{L}(t)$ applies, we can conclude
+%     \begin{equation}
+%         \frac{U_2}{U_1} = \frac{\overline{i}_1}{\overline{i}_2} = D.
+%     \end{equation}}%
+%     \onslide<6->{%
+%     Hence, the duty cycle $D$ has a similar interpretation for the DC-DC step-down converter as the turn ratio for an ideal transformer in the AC domain.
+%     }
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Stationary averaged model of the step-down converter %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Stationary averaged model of the step-down converter}
-    \begin{figure}
-        \begin{circuitikz}[]
-            \draw (-3,0) to [short, o-, i=$\overline{i}_1$] ++(1.5,0)
-            to [current source, i=$D \overline{i}_2$] ++(0,-2)
-            to [short, -o] ++(-1.5,0);
-            \draw (-3,0) to [open, v = $U_1$, voltage = straight] ++(0,-2);
-            \draw (3,0) to [short, o-, i_<=$\overline{i}_2$] ++(-1.5,0)
-            to [voltage source, v_= $D U_1$] ++(0,-2)
-            to [short, -o] ++(1.5,0);
-            \draw (3,0) to [open, v^= $U_2$, voltage = straight] ++(0,-2);
-        \end{circuitikz}
-        \caption{Stationary averaged model of the step-down converter}
-        \label{fig:step-down-converter-averaged}
-    \end{figure}%
-    \pause%
-    \begin{varblock}{Switching vs. linear power conversion}
-        In contrast to the linear power conversion approaches from \figref{fig:linear_power_conversion} and \figref{fig:linear_power_conversion_transistor}, the switching step-down converter transforms the current and voltage levels with the same factor $D$ which results from the (idealized) loss-less transformation of energy. 
-    \end{varblock}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Stationary averaged model of the step-down converter %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Stationary averaged model of the step-down converter}
+%     \begin{figure}
+%         \begin{circuitikz}[]
+%             \draw (-3,0) to [short, o-, i=$\overline{i}_1$] ++(1.5,0)
+%             to [current source, i=$D \overline{i}_2$] ++(0,-2)
+%             to [short, -o] ++(-1.5,0);
+%             \draw (-3,0) to [open, v = $U_1$, voltage = straight] ++(0,-2);
+%             \draw (3,0) to [short, o-, i_<=$\overline{i}_2$] ++(-1.5,0)
+%             to [voltage source, v_= $D U_1$] ++(0,-2)
+%             to [short, -o] ++(1.5,0);
+%             \draw (3,0) to [open, v^= $U_2$, voltage = straight] ++(0,-2);
+%         \end{circuitikz}
+%         \caption{Stationary averaged model of the step-down converter}
+%         \label{fig:step-down-converter-averaged}
+%     \end{figure}%
+%     \pause%
+%     \begin{varblock}{Switching vs. linear power conversion}
+%         In contrast to the linear power conversion approaches from \figref{fig:linear_power_conversion} and \figref{fig:linear_power_conversion_transistor}, the switching step-down converter transforms the current and voltage levels with the same factor $D$ which results from the (idealized) loss-less transformation of energy. 
+%     \end{varblock}
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Current ripple %%
@@ -601,211 +601,211 @@
     \end{varblock}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Steady-state analysis (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Steady-state analysis (cont.)}
-    \onslide<1->{
-    Inserting \eqref{eq:capacitor-current-switch-on-step-down-converter} in \eqref{eq:capacitor-voltage-differential-equation-step-down-converter} and integrating the differential equation delivers the \hl{capacitor voltage during the switch-on period} as}
-    \begin{equation}
-        \begin{split}
-            \onslide<1->{u_\mathrm{C}(t) &= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}}^t i_\mathrm{C}(\tau) \mathrm{d}\tau , \quad t\in [k T_\mathrm{s}, k T_\mathrm{s} + T_\mathrm{on}]} \\
-            \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}}^t -\frac{\Delta i_\mathrm{L}}{2} + \frac{U_1-U_2}{L} (\tau -k T_\mathrm{s}) \mathrm{d}\tau} \\
-            \onslide<3->{&=u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C} \left[-\frac{\Delta i_\mathrm{L}}{2}\tau + \frac{U_1-U_2}{L} (\frac{1}{2}\tau^2 -k T_\mathrm{s}\tau)\right]_{k T_\mathrm{s}}^t} \\
-            \onslide<4->{&=u_\mathrm{C}(k T_\mathrm{s}) - \frac{\Delta i_\mathrm{L}}{2 C}(t- kT_\mathrm{s}) + \frac{U_1-U_2}{LC} \left[t(\frac{t}{2}-kT_\mathrm{s}) + \frac{(kT_\mathrm{s})^2}{2}\right].}
-        \end{split}
-        \label{eq:capacitor-voltage-switch-on-step-down-converter}
-    \end{equation}
-    \onslide<5->{%
-    Here, $u_\mathrm{C}(k T_\mathrm{s})$ is the initial capacitor voltage at the beginning of the switch-on period.}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Steady-state analysis (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Steady-state analysis (cont.)}
+%     \onslide<1->{
+%     Inserting \eqref{eq:capacitor-current-switch-on-step-down-converter} in \eqref{eq:capacitor-voltage-differential-equation-step-down-converter} and integrating the differential equation delivers the \hl{capacitor voltage during the switch-on period} as}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<1->{u_\mathrm{C}(t) &= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}}^t i_\mathrm{C}(\tau) \mathrm{d}\tau , \quad t\in [k T_\mathrm{s}, k T_\mathrm{s} + T_\mathrm{on}]} \\
+%             \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}}^t -\frac{\Delta i_\mathrm{L}}{2} + \frac{U_1-U_2}{L} (\tau -k T_\mathrm{s}) \mathrm{d}\tau} \\
+%             \onslide<3->{&=u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C} \left[-\frac{\Delta i_\mathrm{L}}{2}\tau + \frac{U_1-U_2}{L} (\frac{1}{2}\tau^2 -k T_\mathrm{s}\tau)\right]_{k T_\mathrm{s}}^t} \\
+%             \onslide<4->{&=u_\mathrm{C}(k T_\mathrm{s}) - \frac{\Delta i_\mathrm{L}}{2 C}(t- kT_\mathrm{s}) + \frac{U_1-U_2}{LC} \left[t(\frac{t}{2}-kT_\mathrm{s}) + \frac{(kT_\mathrm{s})^2}{2}\right].}
+%         \end{split}
+%         \label{eq:capacitor-voltage-switch-on-step-down-converter}
+%     \end{equation}
+%     \onslide<5->{%
+%     Here, $u_\mathrm{C}(k T_\mathrm{s})$ is the initial capacitor voltage at the beginning of the switch-on period.}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Steady-state analysis (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Steady-state analysis (cont.)}
-    \onslide<1->{At the \hl{end of the switch-on period}, the capacitor voltage is given by}
-    \begin{equation}
-        \begin{split}
-            \onslide<1->{u_\mathrm{C}(k T_\mathrm{s} + T_\mathrm{on}) &= u_\mathrm{C}(k T_\mathrm{s}) -\frac{\Delta i_\mathrm{L}}{2 C}(k T_\mathrm{s} + T_\mathrm{on}- kT_\mathrm{s})} \\\onslide<1->{&+ \frac{U_1-U_2}{LC} \left[(k T_\mathrm{s} + T_\mathrm{on})(\frac{k T_\mathrm{s} + T_\mathrm{on}}{2}-kT_\mathrm{s}) + \frac{(kT_\mathrm{s})^2}{2}\right]}\\
-            \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) - \frac{\Delta i_\mathrm{L}}{2 C}T_\mathrm{on} +\frac{\Delta i_\mathrm{L}}{2 C}T_\mathrm{on}}\\
-            \onslide<3->{&= u_\mathrm{C}(k T_\mathrm{s}),}
-        \end{split}
-        \label{eq:capacitor-voltage-switch-on-step-down-converter-end}
-    \end{equation}
-    \onslide<4->{i.e., the capacitor voltage at the end of the switch-on period is equal to the voltage at the beginning of the switch-on period. Since the capacitor voltage needs to be continuous over time, this also marks the \hl{initial condition for the switch-off period.}}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Steady-state analysis (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Steady-state analysis (cont.)}
+%     \onslide<1->{At the \hl{end of the switch-on period}, the capacitor voltage is given by}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<1->{u_\mathrm{C}(k T_\mathrm{s} + T_\mathrm{on}) &= u_\mathrm{C}(k T_\mathrm{s}) -\frac{\Delta i_\mathrm{L}}{2 C}(k T_\mathrm{s} + T_\mathrm{on}- kT_\mathrm{s})} \\\onslide<1->{&+ \frac{U_1-U_2}{LC} \left[(k T_\mathrm{s} + T_\mathrm{on})(\frac{k T_\mathrm{s} + T_\mathrm{on}}{2}-kT_\mathrm{s}) + \frac{(kT_\mathrm{s})^2}{2}\right]}\\
+%             \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) - \frac{\Delta i_\mathrm{L}}{2 C}T_\mathrm{on} +\frac{\Delta i_\mathrm{L}}{2 C}T_\mathrm{on}}\\
+%             \onslide<3->{&= u_\mathrm{C}(k T_\mathrm{s}),}
+%         \end{split}
+%         \label{eq:capacitor-voltage-switch-on-step-down-converter-end}
+%     \end{equation}
+%     \onslide<4->{i.e., the capacitor voltage at the end of the switch-on period is equal to the voltage at the beginning of the switch-on period. Since the capacitor voltage needs to be continuous over time, this also marks the \hl{initial condition for the switch-off period.}}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Steady-state analysis (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Steady-state analysis (cont.)}
-    \onslide<1->{
-    Inserting \eqref{eq:capacitor-current-switch-off-step-down-converter} in \eqref{eq:capacitor-voltage-differential-equation-step-down-converter} and integrating the differential equation delivers the \hl{capacitor voltage during the switch-off period} as}
-    \begin{equation}
-        \begin{split}
-            \onslide<1->{u_\mathrm{C}(t) &= u_\mathrm{C}(k T_\mathrm{s}+T_\mathrm{on}) + \frac{1}{C}\int_{k T_\mathrm{s}+T_\mathrm{on}}^t i_\mathrm{C}(\tau) \mathrm{d}\tau, \quad t\in [k T_\mathrm{s} + T_\mathrm{on}, (k+1) T_\mathrm{s}]} \\
-            \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}+T_\mathrm{on}}^t \frac{\Delta i_\mathrm{L}}{2} - \frac{U_2}{L} (\tau - k T_\mathrm{s} - T_\mathrm{on}) \mathrm{d}\tau}\\
-            \onslide<3->{& = u_\mathrm{C}(k T_\mathrm{s}) + \left[\frac{\Delta i_\mathrm{L}}{2}\tau - \frac{U_2}{L} (\frac{1}{2}\tau^2 - k T_\mathrm{s}\tau - T_\mathrm{on}\tau) \right]_{k T_\mathrm{s}+T_\mathrm{on}}^t}\\
-            \onslide<4->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{\Delta i_\mathrm{L}}{2 C}(t - k T_\mathrm{s} - T_\mathrm{on}) - \frac{U_2}{LC} \left[t(\frac{t}{2} - k T_\mathrm{s} - T_\mathrm{on}) + \frac{(k T_\mathrm{s} + T_\mathrm{on})^2}{2}\right].}
-        \end{split}
-        \label{eq:capacitor-voltage-switch-off-step-down-converter}
-    \end{equation}
-    \onslide<5->{Here, $u_\mathrm{C}(k T_\mathrm{s}+T_\mathrm{on})=u_\mathrm{C}(k T_\mathrm{s})$ is the initial capacitor voltage at the beginning of both the switch-on and switch-off period.}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Steady-state analysis (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Steady-state analysis (cont.)}
+%     \onslide<1->{
+%     Inserting \eqref{eq:capacitor-current-switch-off-step-down-converter} in \eqref{eq:capacitor-voltage-differential-equation-step-down-converter} and integrating the differential equation delivers the \hl{capacitor voltage during the switch-off period} as}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<1->{u_\mathrm{C}(t) &= u_\mathrm{C}(k T_\mathrm{s}+T_\mathrm{on}) + \frac{1}{C}\int_{k T_\mathrm{s}+T_\mathrm{on}}^t i_\mathrm{C}(\tau) \mathrm{d}\tau, \quad t\in [k T_\mathrm{s} + T_\mathrm{on}, (k+1) T_\mathrm{s}]} \\
+%             \onslide<2->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{1}{C}\int_{k T_\mathrm{s}+T_\mathrm{on}}^t \frac{\Delta i_\mathrm{L}}{2} - \frac{U_2}{L} (\tau - k T_\mathrm{s} - T_\mathrm{on}) \mathrm{d}\tau}\\
+%             \onslide<3->{& = u_\mathrm{C}(k T_\mathrm{s}) + \left[\frac{\Delta i_\mathrm{L}}{2}\tau - \frac{U_2}{L} (\frac{1}{2}\tau^2 - k T_\mathrm{s}\tau - T_\mathrm{on}\tau) \right]_{k T_\mathrm{s}+T_\mathrm{on}}^t}\\
+%             \onslide<4->{&= u_\mathrm{C}(k T_\mathrm{s}) + \frac{\Delta i_\mathrm{L}}{2 C}(t - k T_\mathrm{s} - T_\mathrm{on}) - \frac{U_2}{LC} \left[t(\frac{t}{2} - k T_\mathrm{s} - T_\mathrm{on}) + \frac{(k T_\mathrm{s} + T_\mathrm{on})^2}{2}\right].}
+%         \end{split}
+%         \label{eq:capacitor-voltage-switch-off-step-down-converter}
+%     \end{equation}
+%     \onslide<5->{Here, $u_\mathrm{C}(k T_\mathrm{s}+T_\mathrm{on})=u_\mathrm{C}(k T_\mathrm{s})$ is the initial capacitor voltage at the beginning of both the switch-on and switch-off period.}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Steady-state time-domain behavior %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]
-    \frametitle{Steady-state time-domain behavior}
-    \begin{figure}
-        \begin{tikzpicture}
-            \pgfmathsetmacro{\D}{0.6} % duty cycle
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Steady-state time-domain behavior %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}[fragile]
+%     \frametitle{Steady-state time-domain behavior}
+%     \begin{figure}
+%         \begin{tikzpicture}
+%             \pgfmathsetmacro{\D}{0.6} % duty cycle
 
-            \begin{groupplot}[group style={group size=1 by 3, xticklabels at = edge bottom}, height=0.34\textheight, width=0.875\textwidth, xmin=0, xmax=4, grid,clip = false, ymin = 0, ymax =1.1]
+%             \begin{groupplot}[group style={group size=1 by 3, xticklabels at = edge bottom}, height=0.34\textheight, width=0.875\textwidth, xmin=0, xmax=4, grid,clip = false, ymin = 0, ymax =1.1]
 
-                % Top plot: voltage at the switch
-                \nextgroupplot[ylabel = {$u(t)$}, ytick = {0, 0.5, 1}, yticklabels = {0, , $U_1$}]
-                    \pgfplotsinvokeforeach{0,...,3}{
-                        \edef\AddPlot{\noexpand\addplot[signalblue, thick] coordinates {({0 + #1},0) ({0 + #1},1) ({\D + #1},1) ({\D + #1},0) ({1 + #1},0) ({1 + #1},1)};}
-                        \AddPlot
-                    }
-                    \draw[signalblue, thick, dashed] (axis cs:0, \D) -- (axis cs:4, \D); % dashed line at U_2 (average)
-                    \node[above, inner sep = 2pt, anchor = south, visible on=<2->] at (axis cs:1-\D/4-0.04, \D+0.05) {$u(t)$}; % label U_2
-                    \draw [thick,<->]  (0,0.42) -- node[below]{$T_\mathrm{on}$}(\D, 0.42); % T_on 
-                    \draw [thick,<->]  (\D,0.42) -- node[below]{$T_\mathrm{off}$}(1.0, 0.42); % T_off
-                    \draw [thick,<->]  (0.0,-0.2) -- node[below]{$T_\mathrm{s}$}(1.0, -0.2); % T_s
-                    \tikzmath{
-                        real \D, \u0, \Ts, \Ton, \Toff, \ripple;
-                        \D = 0.6;
-                        \Ts = 1;
-                        \Ton = \D;
-                        \Toff = 1-\D;
-                        \ripple = 0.75;
-                        \u0 = \D - \ripple / 6 * \Ts*(1-2*\D);
-                    } 
-                    \pgfplotsinvokeforeach{0,...,3}{
-                            \edef\AddPlot{\noexpand\addplot[signalblue, thick, domain=#1:#1+\Ton, samples=50, visible on=<2->] {\u0 - \ripple*(x - #1 * \Ts) + 2 * \ripple / \Ton * (x^2/2 - #1 * \Ts *x + (#1 * \Ts)^2/2)};}
-                            \AddPlot
-                            \edef\AddPlot{\noexpand\addplot[signalblue, thick, domain=#1+\Ton:#1+\Ts, samples=50, visible on=<2->] {\u0 + \ripple*(x - #1 * \Ts - \Ton) - 2 * \ripple / \Toff * (x^2/2 - #1 * \Ts *x - x*\Ton + (#1 * \Ts + \Ton)^2/2)};}
-                            \AddPlot
-                        }
-                    \draw[dashed, thin, visible on=<2->] (axis cs:0, \u0+\ripple*\Toff/4) -- (axis cs:4, \u0+\ripple*\Toff/4);
-                    \draw[dashed, thin, visible on=<2->] (axis cs:0, \u0-\ripple*\Ton/4) -- (axis cs:4, \u0-\ripple*\Ton/4);
-                    \draw[thin, -{Latex[length=2mm]}, visible on=<2->] (axis cs:1+\D/2, \u0+\ripple*\Toff/4+0.25) -- (axis cs:1+\D/2, \u0+\ripple*\Toff/4);
-                    \draw[thin, -{Latex[length=2mm]}, visible on=<2->] (axis cs:1+\D/2, \u0-\ripple*\Ton/4-0.25) -- (axis cs:1+\D/2, \u0-\ripple*\Ton/4);
-                    \node[above, inner sep = 2pt, anchor = west, visible on=<2->] at (axis cs:1+\D/2, \u0-\ripple*\Ton/4-0.2) {$\Delta u_\mathrm{C}$}; 
-                    \draw[{Latex[length=2mm]}-, thin] (axis cs:1.5+\D/2,\D) -- node[right=1mm, fill=white, inner sep = 1pt, anchor = north]{$\overline{u}_\mathrm{c}$}(axis cs:1.5+\D/2,0.1);
-                    \draw[{Latex[length=2mm]}-, thin] (axis cs:2,\D/3) -- node[right=1mm, fill=white, inner sep = 1pt, anchor = west]{$u_\mathrm{s}(t)$}(axis cs:2+\D/2,\D/3);
+%                 % Top plot: voltage at the switch
+%                 \nextgroupplot[ylabel = {$u(t)$}, ytick = {0, 0.5, 1}, yticklabels = {0, , $U_1$}]
+%                     \pgfplotsinvokeforeach{0,...,3}{
+%                         \edef\AddPlot{\noexpand\addplot[signalblue, thick] coordinates {({0 + #1},0) ({0 + #1},1) ({\D + #1},1) ({\D + #1},0) ({1 + #1},0) ({1 + #1},1)};}
+%                         \AddPlot
+%                     }
+%                     \draw[signalblue, thick, dashed] (axis cs:0, \D) -- (axis cs:4, \D); % dashed line at U_2 (average)
+%                     \node[above, inner sep = 2pt, anchor = south, visible on=<2->] at (axis cs:1-\D/4-0.04, \D+0.05) {$u(t)$}; % label U_2
+%                     \draw [thick,<->]  (0,0.42) -- node[below]{$T_\mathrm{on}$}(\D, 0.42); % T_on 
+%                     \draw [thick,<->]  (\D,0.42) -- node[below]{$T_\mathrm{off}$}(1.0, 0.42); % T_off
+%                     \draw [thick,<->]  (0.0,-0.2) -- node[below]{$T_\mathrm{s}$}(1.0, -0.2); % T_s
+%                     \tikzmath{
+%                         real \D, \u0, \Ts, \Ton, \Toff, \ripple;
+%                         \D = 0.6;
+%                         \Ts = 1;
+%                         \Ton = \D;
+%                         \Toff = 1-\D;
+%                         \ripple = 0.75;
+%                         \u0 = \D - \ripple / 6 * \Ts*(1-2*\D);
+%                     } 
+%                     \pgfplotsinvokeforeach{0,...,3}{
+%                             \edef\AddPlot{\noexpand\addplot[signalblue, thick, domain=#1:#1+\Ton, samples=50, visible on=<2->] {\u0 - \ripple*(x - #1 * \Ts) + 2 * \ripple / \Ton * (x^2/2 - #1 * \Ts *x + (#1 * \Ts)^2/2)};}
+%                             \AddPlot
+%                             \edef\AddPlot{\noexpand\addplot[signalblue, thick, domain=#1+\Ton:#1+\Ts, samples=50, visible on=<2->] {\u0 + \ripple*(x - #1 * \Ts - \Ton) - 2 * \ripple / \Toff * (x^2/2 - #1 * \Ts *x - x*\Ton + (#1 * \Ts + \Ton)^2/2)};}
+%                             \AddPlot
+%                         }
+%                     \draw[dashed, thin, visible on=<2->] (axis cs:0, \u0+\ripple*\Toff/4) -- (axis cs:4, \u0+\ripple*\Toff/4);
+%                     \draw[dashed, thin, visible on=<2->] (axis cs:0, \u0-\ripple*\Ton/4) -- (axis cs:4, \u0-\ripple*\Ton/4);
+%                     \draw[thin, -{Latex[length=2mm]}, visible on=<2->] (axis cs:1+\D/2, \u0+\ripple*\Toff/4+0.25) -- (axis cs:1+\D/2, \u0+\ripple*\Toff/4);
+%                     \draw[thin, -{Latex[length=2mm]}, visible on=<2->] (axis cs:1+\D/2, \u0-\ripple*\Ton/4-0.25) -- (axis cs:1+\D/2, \u0-\ripple*\Ton/4);
+%                     \node[above, inner sep = 2pt, anchor = west, visible on=<2->] at (axis cs:1+\D/2, \u0-\ripple*\Ton/4-0.2) {$\Delta u_\mathrm{C}$}; 
+%                     \draw[{Latex[length=2mm]}-, thin] (axis cs:1.5+\D/2,\D) -- node[right=1mm, fill=white, inner sep = 1pt, anchor = north]{$\overline{u}_\mathrm{c}$}(axis cs:1.5+\D/2,0.1);
+%                     \draw[{Latex[length=2mm]}-, thin] (axis cs:2,\D/3) -- node[right=1mm, fill=white, inner sep = 1pt, anchor = west]{$u_\mathrm{s}(t)$}(axis cs:2+\D/2,\D/3);
 
 
-                % Middle plot: inductor current
-                \nextgroupplot[ylabel = {$i_\mathrm{L}(t)$}, ytick = {0, 0.5, 1}, yticklabels = {0, $\overline{i}_\mathrm{L}$, }]
-                    \pgfplotsinvokeforeach{0,...,3}{
-                        \edef\AddPlot{\noexpand\addplot[signalred, thick] coordinates {({0 + #1},0.25) ({\D + #1},0.75) ({1 + #1},0.25)};}
-                        \AddPlot
-                    }
-                    \draw[signalred, thick, dashed] (axis cs:0,0.5) -- (axis cs:4,0.5); % dashed line at average current
-                    \draw[{Latex[length=2mm]}-, thin] (axis cs:\D+0.02,0.75) -- node[right=1mm, fill=white, inner sep = 1pt]{$\max\{i_\mathrm{L}\}$}(axis cs:\D+0.3,0.9); % indicate max current
-                    \draw[-{Latex[length=2mm]}, thin] (axis cs:0.75,0.2) node[right=1mm, fill=white, inner sep = 1pt, anchor = east]{$\min\{i_\mathrm{L}\}$} -- (axis cs:1-0.02,0.25); % indicate min current
-                    \draw[thin] (axis cs:2+\D/4,0.25+0.125) -- (axis cs:2+\D/4,0.75-0.125) -- (axis cs:2+\D*3/4,0.75-0.125); % indicate positive current slopde
-                    \node[above, inner sep = 2pt, anchor = south, xshift = -4mm] at (axis cs:2+\D/2, 0.75-0.125) {$\nicefrac{(U_1-U_2)}{L}$}; % label positive current slope
-                    \draw[thin] (axis cs:2.25+3*\D/4,0.75-0.125) -- (axis cs:2.75+\D/4,0.75-0.125) -- (axis cs:2.75+\D/4,0.25+0.125); % indicate negative current slope
-                    \node[above, inner sep = 2pt, anchor = south, xshift = 2mm] at (axis cs:2.5+\D/2, 0.75-0.125) {$\nicefrac{-U_2}{L}$}; % label negative current slope
+%                 % Middle plot: inductor current
+%                 \nextgroupplot[ylabel = {$i_\mathrm{L}(t)$}, ytick = {0, 0.5, 1}, yticklabels = {0, $\overline{i}_\mathrm{L}$, }]
+%                     \pgfplotsinvokeforeach{0,...,3}{
+%                         \edef\AddPlot{\noexpand\addplot[signalred, thick] coordinates {({0 + #1},0.25) ({\D + #1},0.75) ({1 + #1},0.25)};}
+%                         \AddPlot
+%                     }
+%                     \draw[signalred, thick, dashed] (axis cs:0,0.5) -- (axis cs:4,0.5); % dashed line at average current
+%                     \draw[{Latex[length=2mm]}-, thin] (axis cs:\D+0.02,0.75) -- node[right=1mm, fill=white, inner sep = 1pt]{$\max\{i_\mathrm{L}\}$}(axis cs:\D+0.3,0.9); % indicate max current
+%                     \draw[-{Latex[length=2mm]}, thin] (axis cs:0.75,0.2) node[right=1mm, fill=white, inner sep = 1pt, anchor = east]{$\min\{i_\mathrm{L}\}$} -- (axis cs:1-0.02,0.25); % indicate min current
+%                     \draw[thin] (axis cs:2+\D/4,0.25+0.125) -- (axis cs:2+\D/4,0.75-0.125) -- (axis cs:2+\D*3/4,0.75-0.125); % indicate positive current slopde
+%                     \node[above, inner sep = 2pt, anchor = south, xshift = -4mm] at (axis cs:2+\D/2, 0.75-0.125) {$\nicefrac{(U_1-U_2)}{L}$}; % label positive current slope
+%                     \draw[thin] (axis cs:2.25+3*\D/4,0.75-0.125) -- (axis cs:2.75+\D/4,0.75-0.125) -- (axis cs:2.75+\D/4,0.25+0.125); % indicate negative current slope
+%                     \node[above, inner sep = 2pt, anchor = south, xshift = 2mm] at (axis cs:2.5+\D/2, 0.75-0.125) {$\nicefrac{-U_2}{L}$}; % label negative current slope
                 
-                % Bottom plot: input current
-                \nextgroupplot[ylabel = {$i_1(t)$}, xlabel={$t/T_\mathrm{s}$}, ytick = {0, 0.5, 1}, yticklabels = {0, ,}]
-                    \pgfplotsinvokeforeach{0,...,3}{
-                        \edef\AddPlot{\noexpand\addplot[signalred, thick] coordinates {({0 + #1},0.25) ({\D + #1},0.75) ({\D + #1},0) ({1 + #1},0) ({1 + #1},0.25)};}
-                        \AddPlot
-                    }
-                    \draw[signalred, thick, dashed] (axis cs:0,0.5 * \D) -- (axis cs:4, 0.5 * \D); % dashed line at average current
-                    \node[above, inner sep = 2pt, anchor = south, fill = white] at (axis cs:1.5+\D/2, 0.5 * \D) {$\overline{i}_1$}; % label average current
-            \end{groupplot}
-        \end{tikzpicture}
-    \end{figure}
-\end{frame}
+%                 % Bottom plot: input current
+%                 \nextgroupplot[ylabel = {$i_1(t)$}, xlabel={$t/T_\mathrm{s}$}, ytick = {0, 0.5, 1}, yticklabels = {0, ,}]
+%                     \pgfplotsinvokeforeach{0,...,3}{
+%                         \edef\AddPlot{\noexpand\addplot[signalred, thick] coordinates {({0 + #1},0.25) ({\D + #1},0.75) ({\D + #1},0) ({1 + #1},0) ({1 + #1},0.25)};}
+%                         \AddPlot
+%                     }
+%                     \draw[signalred, thick, dashed] (axis cs:0,0.5 * \D) -- (axis cs:4, 0.5 * \D); % dashed line at average current
+%                     \node[above, inner sep = 2pt, anchor = south, fill = white] at (axis cs:1.5+\D/2, 0.5 * \D) {$\overline{i}_1$}; % label average current
+%             \end{groupplot}
+%         \end{tikzpicture}
+%     \end{figure}
+% \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Output voltage ripple %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Output voltage ripple}
-    \onslide<1->{
-    Utilizing \eqref{eq:capacitor-voltage-switch-on-step-down-converter} and calculating the derivative with respect to $t$ we obtain}
-    \begin{equation}
-        \begin{split}
-            \onslide<1->{\frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} &= -\frac{\Delta i_\mathrm{L}}{2 C} + \frac{U_1-U_2}{LC} t}\\
-                                                          & \onslide<2->{= -\frac{U_1-U_2}{LC}\frac{T_\mathrm{on}}{2} +\frac{U_1-U_2}{LC} (t-kT_\mathrm{s}), \quad t\in [k T_\mathrm{s}, k T_\mathrm{s} + T_\mathrm{on}].}
-        \end{split}
-    \end{equation}
-    \onslide<2->{Setting the derivative to zero, we find the time $t_\mathrm{min}$ at which the minimum voltage occurs as
-    \begin{equation}
-        \frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} = 0 \quad \Rightarrow \quad t_\mathrm{min} = \frac{T_\mathrm{on}}{2} + kT_\mathrm{s}
-        \label{eq:time-min-voltage-ripple-step-down-converter}
-    \end{equation}
-    since the second derivative is positive.} \onslide<3->{Inserting \eqref{eq:time-min-voltage-ripple-step-down-converter} in \eqref{eq:capacitor-voltage-switch-on-step-down-converter} reveals the minimum voltage as
-    \begin{equation}
-        u_\mathrm{C}(t_\mathrm{min}) = u_\mathrm{C}(kT_\mathrm{s}) - \frac{U_1-U_2}{LC} \frac{T_\mathrm{on}^2}{8} = u_\mathrm{C}(kT_\mathrm{s}) - \Delta i_\mathrm{L}\frac{T_\mathrm{on}}{8C}.
-    \end{equation}}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Output voltage ripple %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Output voltage ripple}
+%     \onslide<1->{
+%     Utilizing \eqref{eq:capacitor-voltage-switch-on-step-down-converter} and calculating the derivative with respect to $t$ we obtain}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<1->{\frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} &= -\frac{\Delta i_\mathrm{L}}{2 C} + \frac{U_1-U_2}{LC} t}\\
+%                                                           & \onslide<2->{= -\frac{U_1-U_2}{LC}\frac{T_\mathrm{on}}{2} +\frac{U_1-U_2}{LC} (t-kT_\mathrm{s}), \quad t\in [k T_\mathrm{s}, k T_\mathrm{s} + T_\mathrm{on}].}
+%         \end{split}
+%     \end{equation}
+%     \onslide<2->{Setting the derivative to zero, we find the time $t_\mathrm{min}$ at which the minimum voltage occurs as
+%     \begin{equation}
+%         \frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} = 0 \quad \Rightarrow \quad t_\mathrm{min} = \frac{T_\mathrm{on}}{2} + kT_\mathrm{s}
+%         \label{eq:time-min-voltage-ripple-step-down-converter}
+%     \end{equation}
+%     since the second derivative is positive.} \onslide<3->{Inserting \eqref{eq:time-min-voltage-ripple-step-down-converter} in \eqref{eq:capacitor-voltage-switch-on-step-down-converter} reveals the minimum voltage as
+%     \begin{equation}
+%         u_\mathrm{C}(t_\mathrm{min}) = u_\mathrm{C}(kT_\mathrm{s}) - \frac{U_1-U_2}{LC} \frac{T_\mathrm{on}^2}{8} = u_\mathrm{C}(kT_\mathrm{s}) - \Delta i_\mathrm{L}\frac{T_\mathrm{on}}{8C}.
+%     \end{equation}}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Output voltage ripple (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Output voltage ripple (cont.)}
-    \onslide<1->{Likewise, calculating the derivative of \eqref{eq:capacitor-voltage-switch-off-step-down-converter} leads to}
-    \begin{equation}
-        \begin{split}
-            \onslide<2->{\frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} &= \frac{\Delta i_\mathrm{L}}{2 C} - \frac{U_2}{LC} (t-kT_\mathrm{s} - T_\mathrm{on})}\\
-            \onslide<3->{&= \frac{U_1-U_2}{LC}\frac{T_\mathrm{on}}{2} -\frac{U_2}{LC} (t-kT_\mathrm{s} - T_\mathrm{on}), \quad t\in [k T_\mathrm{s} + T_\mathrm{on}, (k+1) T_\mathrm{s}].}
-        \end{split}
-    \end{equation}
-    \onslide<3->{Setting the derivative to zero, we find the time $t_\mathrm{max}$ at which the maximum voltage occurs as
-    \begin{equation}
-        \frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} = 0 \quad \Rightarrow \quad t_\mathrm{max} = \frac{T_\mathrm{off}}{2} + T_\mathrm{on} + k T_\mathrm{s}
-    \end{equation}
-    since the second derivative is negative.} \onslide<4->{The maximum voltage is then given by
-    \begin{equation}
-        u_\mathrm{C}(t_\mathrm{max}) = u_\mathrm{C}(kT_\mathrm{s}) + \Delta i_\mathrm{L}\frac{T_\mathrm{off}}{8C}.
-    \end{equation}}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Output voltage ripple (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Output voltage ripple (cont.)}
+%     \onslide<1->{Likewise, calculating the derivative of \eqref{eq:capacitor-voltage-switch-off-step-down-converter} leads to}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<2->{\frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} &= \frac{\Delta i_\mathrm{L}}{2 C} - \frac{U_2}{LC} (t-kT_\mathrm{s} - T_\mathrm{on})}\\
+%             \onslide<3->{&= \frac{U_1-U_2}{LC}\frac{T_\mathrm{on}}{2} -\frac{U_2}{LC} (t-kT_\mathrm{s} - T_\mathrm{on}), \quad t\in [k T_\mathrm{s} + T_\mathrm{on}, (k+1) T_\mathrm{s}].}
+%         \end{split}
+%     \end{equation}
+%     \onslide<3->{Setting the derivative to zero, we find the time $t_\mathrm{max}$ at which the maximum voltage occurs as
+%     \begin{equation}
+%         \frac{\mathrm{d}u_\mathrm{C}(t)}{\mathrm{d}t} = 0 \quad \Rightarrow \quad t_\mathrm{max} = \frac{T_\mathrm{off}}{2} + T_\mathrm{on} + k T_\mathrm{s}
+%     \end{equation}
+%     since the second derivative is negative.} \onslide<4->{The maximum voltage is then given by
+%     \begin{equation}
+%         u_\mathrm{C}(t_\mathrm{max}) = u_\mathrm{C}(kT_\mathrm{s}) + \Delta i_\mathrm{L}\frac{T_\mathrm{off}}{8C}.
+%     \end{equation}}
+% \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Output voltage ripple (cont.) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Output voltage ripple (cont.)}
-    \onslide<1->{The \hl{voltage ripple} is then given by}
-    \begin{equation}
-        \begin{split}
-            \onslide<1->{\Delta u_\mathrm{C} &= u_\mathrm{C}(t_\mathrm{max}) - u_\mathrm{C}(t_\mathrm{min})} \onslide<2->{= \Delta i_\mathrm{L}\frac{T_\mathrm{off}}{8C} + \Delta i_\mathrm{L}\frac{T_\mathrm{on}}{8C}}\\
-            \onslide<3->{&= \Delta i_\mathrm{L}\frac{T_\mathrm{s}}{8C} = \frac{D(1-D)T_\mathrm{s}^2U_1}{8LC}.}
-        \end{split}
-        \label{eq:voltage-ripple-step-down-converter}
-    \end{equation}
-    \onslide<4->{The voltage ripple is proportionally depending on the inductor current ripple. Hence, the maximum voltage ripple occurs at the same characteristic duty cycle $D_\mathrm{max}$ and is given by
-    \begin{equation}
-        D_\mathrm{max}=\frac{1}{2} \quad \Rightarrow \quad \Delta u_\mathrm{C, max} =  \frac{T_\mathrm{s}^2U_1}{32 LC}.
-    \end{equation}}
-    \onslide<5->{Hence, we can rewrite the voltage ripple as
-    \begin{equation}
-        \Delta u_\mathrm{C} =   4D(1-D)\Delta u_\mathrm{C, max}.
-    \end{equation}
-    The voltage ripple is associated with \hl{additional losses} in the output capacitor and the load, that is, an \hl{important stress parameter.}}
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Output voltage ripple (cont.) %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+%     \frametitle{Output voltage ripple (cont.)}
+%     \onslide<1->{The \hl{voltage ripple} is then given by}
+%     \begin{equation}
+%         \begin{split}
+%             \onslide<1->{\Delta u_\mathrm{C} &= u_\mathrm{C}(t_\mathrm{max}) - u_\mathrm{C}(t_\mathrm{min})} \onslide<2->{= \Delta i_\mathrm{L}\frac{T_\mathrm{off}}{8C} + \Delta i_\mathrm{L}\frac{T_\mathrm{on}}{8C}}\\
+%             \onslide<3->{&= \Delta i_\mathrm{L}\frac{T_\mathrm{s}}{8C} = \frac{D(1-D)T_\mathrm{s}^2U_1}{8LC}.}
+%         \end{split}
+%         \label{eq:voltage-ripple-step-down-converter}
+%     \end{equation}
+%     \onslide<4->{The voltage ripple is proportionally depending on the inductor current ripple. Hence, the maximum voltage ripple occurs at the same characteristic duty cycle $D_\mathrm{max}$ and is given by
+%     \begin{equation}
+%         D_\mathrm{max}=\frac{1}{2} \quad \Rightarrow \quad \Delta u_\mathrm{C, max} =  \frac{T_\mathrm{s}^2U_1}{32 LC}.
+%     \end{equation}}
+%     \onslide<5->{Hence, we can rewrite the voltage ripple as
+%     \begin{equation}
+%         \Delta u_\mathrm{C} =   4D(1-D)\Delta u_\mathrm{C, max}.
+%     \end{equation}
+%     The voltage ripple is associated with \hl{additional losses} in the output capacitor and the load, that is, an \hl{important stress parameter.}}
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Output voltage ripple: alternative via charge balance %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-    \frametitle{Output voltage ripple: alternative via charge balance}
+    \frametitle{Output voltage ripple: via charge balance}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             If one is not interested in the specific signal shape $u_\mathrm{C}(t)$, the output voltage ripple can be derived from the charge balance over half a period (cf. \figref{fig:step-down-converter-voltage-ripple-charge-balance}):
