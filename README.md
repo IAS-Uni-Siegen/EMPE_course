@@ -42,7 +42,7 @@ The covered topics are:
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercise.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
 
 ## Exercise tasks with the topic EMD including solutions (click on preview picture)
-<a href="https://ias-uni-siegen.github.io/EMPE_course/exercise_with_solution.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
+<a href="https://ias-uni-siegen.github.io/EMPE_course/exercise_with_solution.pdf" target="_blank" class="image fit"><img src="misc/Exercise_with_solution_preview.png" alt=""></a>
 
 ## Exercise tasks with the topic PE (click on preview picture)
 
@@ -51,7 +51,7 @@ The covered topics are:
   </a>
 
 ## Exercise tasks with the topic PE including solutions (click on preview picture)
-<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE_with_solution.pdf" target="_blank" class="image fit"><img src="misc/Exercise_preview.png" alt=""></a>
+<a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE_with_solution.pdf" target="_blank" class="image fit"><img src="misc/ExercisePE_with_solution_preview.png" alt=""></a>
 <!--
 ## Exercise tasks with the topic PE (click on preview picture)
 <a href="https://ias-uni-siegen.github.io/EMPE_course/exercisePE.pdf" target="_blank" class="image fit"><img src="misc/ExercisePE_preview.png" alt=""></a>
